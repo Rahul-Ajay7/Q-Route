@@ -1,0 +1,11 @@
+"""Run the QUBO solver on experiment configs."""
+
+from __future__ import annotations
+
+
+def main() -> None:
+    raise NotImplementedError
+
+
+if __name__ == "__main__":
+    main()

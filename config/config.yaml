@@ -1,0 +1,30 @@
+# Q-ORBIT global configuration
+project:
+  name: Q-ORBIT
+  version: 0.1.0
+  seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  synthetic_dir: data/synthetic
+  cvrplib_dir: data/raw/cvrplib
+  traffic_dir: data/raw/traffic
+
+routing:
+  engine: osrm
+  osrm_url: http://localhost:5000
+
+optimization:
+  default_solver: sa
+  solvers: [greedy, sa, qubo]
+
+results:
+  raw_dir: results/raw
+  processed_dir: results/processed
+  tables_dir: results/tables
+  figures_dir: results/figures
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

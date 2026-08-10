@@ -1,0 +1,19 @@
+# Objective weights for the Q-ORBIT cost function
+cost_weights:
+  distance: 1.0
+  travel_time: 1.2
+  operating: 0.8
+  late_penalty: 2.0
+  traffic: 1.0
+
+# QUBO penalty weights
+qubo_penalties:
+  capacity: 10.0
+  time_window: 10.0
+  assignment: 5.0
+  route_continuity: 5.0
+
+# Weight normalization
+normalization:
+  enabled: true
+  method: minmax

@@ -1,0 +1,19 @@
+# Medium experiment configuration
+instance:
+  name: medium
+  num_customers: 50
+  num_vehicles: 8
+  seed: 42
+
+solver:
+  greedy:
+    enabled: true
+  sa:
+    enabled: true
+    initial_temp: 150.0
+    cooling_rate: 0.99
+    max_iterations: 20000
+  qubo:
+    enabled: true
+    backend: simulated
+    num_reads: 1000
