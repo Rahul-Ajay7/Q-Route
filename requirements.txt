@@ -9,3 +9,7 @@ requests>=2.31
 scipy>=1.10
 tqdm>=4.65
 pytest>=7.0
+dimod>=0.12
+dwave-neal
+folium
+vrplib
