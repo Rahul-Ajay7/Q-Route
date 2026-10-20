@@ -6,6 +6,7 @@ combines global simulated annealing, cross-vehicle repair, and adaptive QUBO ref
 ## Start here
 
 - [Complete project details and upgrade history](docs/PROJECT_MASTER_RECORD.md).
+- [Latest all-case four-approach run and cumulative results](results/comparison/four_approaches_20261021/SUMMARY.md).
 - [Detailed four-approach PDF](docs/FOUR_APPROACHES.pdf) ([editable source](docs/FOUR_APPROACHES.md)).
 - [Current results and hybrid implementation](docs/HYBRID_V2.md).
 - [Current comparison CSV](results/comparison/hybrid_v2_validation/runs.csv).

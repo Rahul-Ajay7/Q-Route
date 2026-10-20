@@ -197,7 +197,7 @@ These limits control overhead and do not perform exhaustive neighbourhood search
 | `tests/` | Shared algorithm, provenance, layout, original SA and dashboard tests |
 | `dashboard/app.py` | Read-only Streamlit experiment table, cost chart and route viewer |
 | `data/comparison/solomon/` | Converted free-flow and synthetic-congestion Solomon inputs |
-| `results/comparison/` | Two current v2 experiments |
+| `results/comparison/` | Frozen v2 validation, budget check and latest complete four-method run |
 | `results/archive/` | Verified historical, development and member-artifact ZIPs |
 | `docs/` | Current guides, this master record and historical findings |
 | `pytest.ini` | Central test collection, including original member suites |
@@ -354,6 +354,45 @@ the root README and documentation index. Re-ran all 134 substantive tests
 successfully. The user requested committing and pushing the integrated project
 to the configured GitHub repository; the delivery commit is recorded in Git.
 No new scientific benchmark was run for the report.
+
+### Stage 11 — Complete four-approach execution: 21 October 2026
+
+Ran every supplied TC JSON-named file and all six converted Solomon variants
+with the four primary approaches, five seeds (20–24), hard windows, and one
+second per optimization. There were 680 recorded attempts: 600 independently
+audited feasible results and 80 shared construction failures. TC14 was separately
+recorded as invalid. TC15, TC16, TC25 and R101's traffic variant failed shared
+construction; these are not infeasibility proofs.
+
+Saved raw routes, source snapshots, manifests, audits, CSVs, plots and reports
+under `results/comparison/four_approaches_20261021/`. Added a summary exporter
+with separate dataset-level paired comparisons and descriptive cumulative
+cost totals. The [summary](../results/comparison/four_approaches_20261021/SUMMARY.md)
+contains the complete new results; earlier benchmark numbers remain unchanged.
+This run includes previously used development cases, so it is a full rerun,
+not an independent holdout evaluation. No no-QUBO ablation was requested or run.
+
+On the supplied suite, hybrid paired mean cost reductions were 1.02% versus
+classical SA, 0.90% versus tunnelling SA and 8.79% versus QUBO+SB. On the five
+feasible Solomon variants, reductions were 3.18%, 0.52% and 13.84% respectively;
+the small Solomon dataset did not establish superiority under adjusted tests.
+
+The sum of seed-averaged costs over all 30 jointly feasible dataset/case groups
+was INR 431,735.22 for hybrid, 436,543.37 for tunnelling SA, 444,502.59 for
+classical SA and 499,156.33 for QUBO+SB. This is a descriptive basket of cases;
+expensive cases dominate it. It is not a single fleet's cost or a pooled
+statistical comparison. Saved source and input hashes passed verification.
+
+### Stage 12 — Individual and cumulative graphs: 21 October 2026
+
+Added `team_benchmark/plot_cases.py` to render the saved complete-run evidence.
+Created 35 individual case PNGs (30 successful comparisons and five explicit
+invalid/construction-failure pages), a cumulative PNG/SVG with separate supplied,
+Solomon and overall panels, and one 36-page vector PDF containing every case
+plus the cumulative graph. Seed-mean bars show individual seed dots and sample
+standard deviations; these whiskers are not confidence intervals. Failed cases
+have no cost bars. No optimization was rerun and recorded costs are unchanged.
+See the [graph index](../results/comparison/four_approaches_20261021/plots/README.md).
 
 ## 7. Experiment history and measured results
 

@@ -1,0 +1,348 @@
+{
+  "datasets": {
+    "solomon_cases": {
+      "summary": [
+        {
+          "dataset": "solomon_cases",
+          "method": "classical_sa",
+          "attempted_runs": 30,
+          "feasible_runs": 25,
+          "failed_runs": 5,
+          "jointly_feasible_seed_pairs": 25,
+          "jointly_feasible_cases": 5,
+          "cumulative_case_mean_cost": 264903.85487993027,
+          "mean_feasible_run_cost": 52980.77097598605,
+          "mean_improvement_from_initial_percent": 11.238432637214963,
+          "mean_feasible_optimization_seconds": 1.0000697839981876,
+          "total_optimization_seconds": 25.00384280004073,
+          "max_budget_overrun_seconds": 0.0005954999942332506
+        },
+        {
+          "dataset": "solomon_cases",
+          "method": "tunnelling_sa",
+          "attempted_runs": 30,
+          "feasible_runs": 25,
+          "failed_runs": 5,
+          "jointly_feasible_seed_pairs": 25,
+          "jointly_feasible_cases": 5,
+          "cumulative_case_mean_cost": 257222.90211796493,
+          "mean_feasible_run_cost": 51444.58042359298,
+          "mean_improvement_from_initial_percent": 13.547150431701553,
+          "mean_feasible_optimization_seconds": 1.0000539999967442,
+          "total_optimization_seconds": 25.003979800036177,
+          "max_budget_overrun_seconds": 0.00035099999513477087
+        },
+        {
+          "dataset": "solomon_cases",
+          "method": "qubo_sb",
+          "attempted_runs": 30,
+          "feasible_runs": 25,
+          "failed_runs": 5,
+          "jointly_feasible_seed_pairs": 25,
+          "jointly_feasible_cases": 5,
+          "cumulative_case_mean_cost": 302169.56543175125,
+          "mean_feasible_run_cost": 60433.91308635026,
+          "mean_improvement_from_initial_percent": 0.11326768386537275,
+          "mean_feasible_optimization_seconds": 1.0007245719991624,
+          "total_optimization_seconds": 25.021045900008176,
+          "max_budget_overrun_seconds": 0.004183800017926842
+        },
+        {
+          "dataset": "solomon_cases",
+          "method": "hybrid",
+          "attempted_runs": 30,
+          "feasible_runs": 25,
+          "failed_runs": 5,
+          "jointly_feasible_seed_pairs": 25,
+          "jointly_feasible_cases": 5,
+          "cumulative_case_mean_cost": 254264.74971554018,
+          "mean_feasible_run_cost": 50852.94994310803,
+          "mean_improvement_from_initial_percent": 13.947319767921138,
+          "mean_feasible_optimization_seconds": 1.0000585040054284,
+          "total_optimization_seconds": 25.003742800152395,
+          "max_budget_overrun_seconds": 0.00021769996965304017
+        }
+      ],
+      "paired_comparisons": [
+        {
+          "vs": "classical_sa",
+          "cases": 5,
+          "seed_pairs": 25,
+          "mean_percent": 3.1827656556644817,
+          "ci95": [
+            0.008835440891251923,
+            6.5913783806864314
+          ],
+          "p": 0.3125,
+          "wins": 4,
+          "ties": 0,
+          "losses": 1,
+          "p_holm": 0.625
+        },
+        {
+          "vs": "qubo_sb",
+          "cases": 5,
+          "seed_pairs": 25,
+          "mean_percent": 13.843696467005,
+          "ci95": [
+            7.262354643289346,
+            20.425038290720654
+          ],
+          "p": 0.0625,
+          "wins": 5,
+          "ties": 0,
+          "losses": 0,
+          "p_holm": 0.1875
+        },
+        {
+          "vs": "tunnelling_sa",
+          "cases": 5,
+          "seed_pairs": 25,
+          "mean_percent": 0.5188485605454002,
+          "ci95": [
+            -1.9576344527777376,
+            3.0758384110695585
+          ],
+          "p": 0.8125,
+          "wins": 3,
+          "ties": 0,
+          "losses": 2,
+          "p_holm": 0.8125
+        }
+      ],
+      "invalid_inputs": [],
+      "failed_cases": [
+        "R101_traffic.json"
+      ],
+      "feasible_runs_audited": 100,
+      "settings": {
+        "seconds": 1.0,
+        "max_actions": 1000000,
+        "window": 5,
+        "samples": 8,
+        "qubo_steps": 40,
+        "plateau": 50,
+        "tabu_cycles": 2,
+        "cycles": 20,
+        "cooling": 0.995,
+        "hybrid_backend": "sa"
+      },
+      "seeds": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "supplied_cases": {
+      "summary": [
+        {
+          "dataset": "supplied_cases",
+          "method": "classical_sa",
+          "attempted_runs": 140,
+          "feasible_runs": 125,
+          "failed_runs": 15,
+          "jointly_feasible_seed_pairs": 125,
+          "jointly_feasible_cases": 25,
+          "cumulative_case_mean_cost": 179598.73039443497,
+          "mean_feasible_run_cost": 7183.9492157774,
+          "mean_improvement_from_initial_percent": 10.162785535650615,
+          "mean_feasible_optimization_seconds": 1.0000221727984027,
+          "total_optimization_seconds": 125.00406229984947,
+          "max_budget_overrun_seconds": 0.00011369999265298247
+        },
+        {
+          "dataset": "supplied_cases",
+          "method": "tunnelling_sa",
+          "attempted_runs": 140,
+          "feasible_runs": 125,
+          "failed_runs": 15,
+          "jointly_feasible_seed_pairs": 125,
+          "jointly_feasible_cases": 25,
+          "cumulative_case_mean_cost": 179320.46725256933,
+          "mean_feasible_run_cost": 7172.818690102776,
+          "mean_improvement_from_initial_percent": 10.272497894232728,
+          "mean_feasible_optimization_seconds": 1.000019865599461,
+          "total_optimization_seconds": 125.0037247997825,
+          "max_budget_overrun_seconds": 0.00023830001009628177
+        },
+        {
+          "dataset": "supplied_cases",
+          "method": "qubo_sb",
+          "attempted_runs": 140,
+          "feasible_runs": 125,
+          "failed_runs": 15,
+          "jointly_feasible_seed_pairs": 125,
+          "jointly_feasible_cases": 25,
+          "cumulative_case_mean_cost": 196986.76273339393,
+          "mean_feasible_run_cost": 7879.470509335758,
+          "mean_improvement_from_initial_percent": 2.542137118120741,
+          "mean_feasible_optimization_seconds": 1.0005803312007338,
+          "total_optimization_seconds": 125.07359300000826,
+          "max_budget_overrun_seconds": 0.0016101999790407717
+        },
+        {
+          "dataset": "supplied_cases",
+          "method": "hybrid",
+          "attempted_runs": 140,
+          "feasible_runs": 125,
+          "failed_runs": 15,
+          "jointly_feasible_seed_pairs": 125,
+          "jointly_feasible_cases": 25,
+          "cumulative_case_mean_cost": 177470.46849135566,
+          "mean_feasible_run_cost": 7098.818739654224,
+          "mean_improvement_from_initial_percent": 11.10699015280019,
+          "mean_feasible_optimization_seconds": 1.0000857720025815,
+          "total_optimization_seconds": 125.01187450025463,
+          "max_budget_overrun_seconds": 0.007941899995785207
+        }
+      ],
+      "paired_comparisons": [
+        {
+          "vs": "classical_sa",
+          "cases": 25,
+          "seed_pairs": 125,
+          "mean_percent": 1.0153491799688077,
+          "ci95": [
+            0.3448550872973285,
+            1.9499915054190395
+          ],
+          "p": 0.0031429285311656034,
+          "wins": 12,
+          "ties": 10,
+          "losses": 3,
+          "p_holm": 0.006285857062331207
+        },
+        {
+          "vs": "qubo_sb",
+          "cases": 25,
+          "seed_pairs": 125,
+          "mean_percent": 8.788122804235181,
+          "ci95": [
+            6.472437842723533,
+            11.102223191070086
+          ],
+          "p": 4.009964816469138e-05,
+          "wins": 22,
+          "ties": 3,
+          "losses": 0,
+          "p_holm": 0.00012029894449407413
+        },
+        {
+          "vs": "tunnelling_sa",
+          "cases": 25,
+          "seed_pairs": 125,
+          "mean_percent": 0.897744971902192,
+          "ci95": [
+            0.20848250412031655,
+            1.8871982059681123
+          ],
+          "p": 0.014772349168537114,
+          "wins": 12,
+          "ties": 8,
+          "losses": 5,
+          "p_holm": 0.014772349168537114
+        }
+      ],
+      "invalid_inputs": [
+        {
+          "case": "TC14.json",
+          "error": "Expecting value: line 1 column 1 (char 0)"
+        }
+      ],
+      "failed_cases": [
+        "TC15.json",
+        "TC16.json",
+        "TC25.json"
+      ],
+      "feasible_runs_audited": 500,
+      "settings": {
+        "seconds": 1.0,
+        "max_actions": 1000000,
+        "window": 5,
+        "samples": 8,
+        "qubo_steps": 40,
+        "plateau": 50,
+        "tabu_cycles": 2,
+        "cycles": 20,
+        "cooling": 0.995,
+        "hybrid_backend": "sa"
+      },
+      "seeds": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    }
+  },
+  "overall_descriptive": [
+    {
+      "dataset": "ALL_DATASETS_DESCRIPTIVE",
+      "method": "classical_sa",
+      "attempted_runs": 170,
+      "feasible_runs": 150,
+      "failed_runs": 20,
+      "jointly_feasible_seed_pairs": 150,
+      "jointly_feasible_cases": 30,
+      "cumulative_case_mean_cost": 444502.5852743653,
+      "mean_feasible_run_cost": 14816.752842478842,
+      "mean_improvement_from_initial_percent": 10.342060052578006,
+      "mean_feasible_optimization_seconds": 1.0000301079983667,
+      "total_optimization_seconds": 150.0079050998902,
+      "max_budget_overrun_seconds": 0.0005954999942332506
+    },
+    {
+      "dataset": "ALL_DATASETS_DESCRIPTIVE",
+      "method": "tunnelling_sa",
+      "attempted_runs": 170,
+      "feasible_runs": 150,
+      "failed_runs": 20,
+      "jointly_feasible_seed_pairs": 150,
+      "jointly_feasible_cases": 30,
+      "cumulative_case_mean_cost": 436543.3693705343,
+      "mean_feasible_run_cost": 14551.445645684476,
+      "mean_improvement_from_initial_percent": 10.818273317144198,
+      "mean_feasible_optimization_seconds": 1.0000255546656747,
+      "total_optimization_seconds": 150.00770459981868,
+      "max_budget_overrun_seconds": 0.00035099999513477087
+    },
+    {
+      "dataset": "ALL_DATASETS_DESCRIPTIVE",
+      "method": "qubo_sb",
+      "attempted_runs": 170,
+      "feasible_runs": 150,
+      "failed_runs": 20,
+      "jointly_feasible_seed_pairs": 150,
+      "jointly_feasible_cases": 30,
+      "cumulative_case_mean_cost": 499156.32816514536,
+      "mean_feasible_run_cost": 16638.544272171508,
+      "mean_improvement_from_initial_percent": 2.1373255457448463,
+      "mean_feasible_optimization_seconds": 1.0006043713338053,
+      "total_optimization_seconds": 150.09463890001643,
+      "max_budget_overrun_seconds": 0.004183800017926842
+    },
+    {
+      "dataset": "ALL_DATASETS_DESCRIPTIVE",
+      "method": "hybrid",
+      "attempted_runs": 170,
+      "feasible_runs": 150,
+      "failed_runs": 20,
+      "jointly_feasible_seed_pairs": 150,
+      "jointly_feasible_cases": 30,
+      "cumulative_case_mean_cost": 431735.21820689586,
+      "mean_feasible_run_cost": 14391.173940229859,
+      "mean_improvement_from_initial_percent": 11.580378421987016,
+      "mean_feasible_optimization_seconds": 1.0000812273363893,
+      "total_optimization_seconds": 150.01561730040703,
+      "max_budget_overrun_seconds": 0.007941899995785207
+    }
+  ],
+  "definitions": {
+    "cumulative_case_mean_cost": "Sum across jointly feasible dataset/case groups of seed-mean INR cost. A descriptive basket of cases, not one fleet or an equal-case relative improvement.",
+    "paired_comparisons": "Separate by dataset; seed differences averaged within case. No pooled statistical inference across datasets.",
+    "failed_runs": "Construction failures have no finite quality score; excluded from cost calculations, retained in feasibility counts."
+  }
+}

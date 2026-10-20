@@ -16,6 +16,7 @@ Q-Route/
     comparison/
       hybrid_v2_validation/   Main retained validation, data, figures and sources.zip
       hybrid_v2_budget_check/ Four-case longer-budget check
+      four_approaches_20261021/ All TC + Solomon runs, cumulative and per-case summaries
     archive/               Historical/member/development evidence in verified ZIPs
   data/comparison/solomon/  Converted free-flow and congestion instances
   dashboard/app.py         Read-only recorded-results viewer

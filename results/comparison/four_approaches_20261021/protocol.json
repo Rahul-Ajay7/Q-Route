@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-20T20:13:59.545129+00:00",
+  "purpose": "Run every supplied TC JSON-named case and every converted Solomon comparison case through all four current methods.",
+  "methods": [
+    "classical_sa",
+    "tunnelling_sa",
+    "qubo_sb",
+    "hybrid"
+  ],
+  "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "seconds_per_optimization": 1.0,
+  "window_policy": "hard",
+  "hybrid_backend": "sa",
+  "datasets": {
+    "supplied_cases": {
+      "directory": "members/Rahul/test_cases",
+      "cases": [
+        "TC01.json",
+        "TC02.json",
+        "TC03.json",
+        "TC04.json",
+        "TC05.json",
+        "TC06.json",
+        "TC07.json",
+        "TC08.json",
+        "TC09.json",
+        "TC10.json",
+        "TC11.json",
+        "TC12.json",
+        "TC13.json",
+        "TC14.json",
+        "TC15.json",
+        "TC16.json",
+        "TC17.json",
+        "TC18.json",
+        "TC19.json",
+        "TC20.json",
+        "TC21.json",
+        "TC22.json",
+        "TC23.json",
+        "TC24.json",
+        "TC25.json",
+        "TC26.json",
+        "TC28.json",
+        "TC29.json",
+        "TC30.json"
+      ]
+    },
+    "solomon_cases": {
+      "directory": "data/comparison/solomon",
+      "cases": [
+        "C101_freeflow.json",
+        "C101_traffic.json",
+        "R101_freeflow.json",
+        "R101_traffic.json",
+        "RC101_freeflow.json",
+        "RC101_traffic.json"
+      ]
+    }
+  },
+  "policy": "No tuning during or after this execution. Preserve every outcome. Invalid inputs and shared construction failures remain explicit. Keep dataset-level inference separate; any all-dataset totals are descriptive only.",
+  "command_supplied": "venv/Scripts/python.exe -B -m team_benchmark.run --seeds 20 21 22 23 24 --seconds 1 --methods classical_sa tunnelling_sa qubo_sb hybrid --output results\\comparison\\four_approaches_20261021\\supplied_cases",
+  "command_solomon": "venv/Scripts/python.exe -B -m team_benchmark.run --cases-dir data/comparison/solomon --cases C101_freeflow.json C101_traffic.json R101_freeflow.json R101_traffic.json RC101_freeflow.json RC101_traffic.json --seeds 20 21 22 23 24 --seconds 1 --methods classical_sa tunnelling_sa qubo_sb hybrid --output results\\comparison\\four_approaches_20261021\\solomon_cases"
+}

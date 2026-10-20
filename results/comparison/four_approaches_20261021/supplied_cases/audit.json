@@ -1,0 +1,244 @@
+{
+  "feasible_runs_audited": 500,
+  "failed_runs": 60,
+  "declared_source_hashes_verified": true,
+  "input_hashes_verified": true,
+  "exact_small_cases": [
+    {
+      "case": "TC03.json",
+      "optimal_cost": 2555.974523378284,
+      "proven_optimal": true,
+      "proven_infeasible": false,
+      "run_gap_percent": [
+        {
+          "method": "classical_sa",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 24,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 24,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 24,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 24,
+          "gap_percent": 0.0
+        }
+      ]
+    },
+    {
+      "case": "TC30.json",
+      "optimal_cost": 836.2005987865272,
+      "proven_optimal": true,
+      "proven_infeasible": false,
+      "run_gap_percent": [
+        {
+          "method": "classical_sa",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 20,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 21,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 22,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 23,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 24,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 24,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 24,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 24,
+          "gap_percent": 0.0
+        }
+      ]
+    }
+  ],
+  "current_source_matches_manifest": true,
+  "source_verification": {
+    "team_benchmark/audit.py": "current",
+    "team_benchmark/cached.py": "current",
+    "team_benchmark/exact.py": "current",
+    "team_benchmark/hybrid.py": "current",
+    "team_benchmark/layout.py": "current",
+    "team_benchmark/member_cli.py": "current",
+    "team_benchmark/plot.py": "current",
+    "team_benchmark/prepare_solomon.py": "current",
+    "team_benchmark/problem.py": "current",
+    "team_benchmark/provenance.py": "current",
+    "team_benchmark/report.py": "current",
+    "team_benchmark/run.py": "current",
+    "team_benchmark/solvers.py": "current",
+    "team_benchmark/verify_results.py": "current",
+    "team_benchmark/__init__.py": "current",
+    "members/Rahul/run_sb.py": "current",
+    "members/Angel/saq_cvrptw.py": "current"
+  }
+}
