@@ -15,6 +15,54 @@ dates or commit IDs. Team upgrades were developed together in the working tree;
 their stage labels do not represent separate Git releases. Consult Git history
 for the integration commit and later publication history.
 
+## Latest development status
+
+As of 21 October 2026, the four methods, hybrid v2, complete-case execution,
+audits, graphs and reports are implemented. The latest published development
+commit is [`efd2cc0`](https://github.com/Rahul-Ajay7/Q-Route/commit/efd2cc0)
+on `main` in `Rahul-Ajay7/Q-Route`. This subsequent documentation refresh is
+local until separately committed and pushed.
+
+| Deliverable | Completed status / evidence |
+|---|---|
+| Four member methods | Classical SA, Angel's tunnelling SA, Rahul's QUBO+SB, Parikshit's adaptive hybrid v2 |
+| Full case coverage | All 29 supplied TC JSON-named files and six converted Solomon variants scanned |
+| Latest execution | Five seeds (20–24), 1 second per optimization, hard windows; 680 attempts |
+| Final-route verification | 600 feasible results independently audited; source/input hashes verified |
+| Failures retained | 80 construction failures; TC14 separately invalid; no finite failure scores |
+| Individual graphs | 35 pages: 30 feasible case comparisons and five explicit failure/invalid pages |
+| Cumulative figures | Separate supplied, Solomon and overall panels; PNG and SVG |
+| Reports | 12-page method PDF, 36-page graph PDF, detailed run reports and CSVs |
+| Test suite | 134 active production tests; the eight experimental checks and their recorded 142-test run are preserved in the pilot archive |
+| Adaptive-removal experiment | Archived after mixed three-case findings; v2 remains the default |
+| Research status | Hybrid has lowest latest cumulative cost; no demonstrated QUBO-specific or quantum advantage |
+
+The latest cumulative costs sum seed-mean costs across 30 jointly feasible
+dataset/case groups:
+
+| Approach | Cumulative cost (synthetic INR) |
+|---|---:|
+| Parikshit / hybrid v2 | **431,735.22** |
+| Angel / tunnelling SA | 436,543.37 |
+| Alphonsa / classical SA | 444,502.59 |
+| Rahul / QUBO+SB | 499,156.33 |
+
+These are descriptive totals across a basket of cases, with expensive cases
+dominating; they are not one fleet's operating bill or pooled statistical proof.
+The latest run is a rerun of supplied fixtures, not an independent holdout.
+
+Quick evidence: [latest summary](../results/comparison/four_approaches_20261021/SUMMARY.md),
+[per-case CSV](../results/comparison/four_approaches_20261021/case_results.csv),
+[graph index](../results/comparison/four_approaches_20261021/plots/README.md),
+[cumulative graph](../results/comparison/four_approaches_20261021/plots/cumulative_comparison.png),
+[graph PDF](../results/comparison/four_approaches_20261021/plots/ALL_CASES_AND_CUMULATIVE.pdf),
+and [method PDF](FOUR_APPROACHES.pdf).
+
+The method PDF describes the implementation and earlier frozen v2 evaluation.
+The latest complete rerun and its 680 attempts are documented in the separate
+summary and graph PDF; the older method PDF's numerical section has not been
+silently replaced.
+
 ## Contents
 
 1. [Purpose and current status](#1-purpose-and-current-status)
@@ -394,7 +442,61 @@ standard deviations; these whiskers are not confidence intervals. Failed cases
 have no cost bars. No optimization was rerun and recorded costs are unchanged.
 See the [graph index](../results/comparison/four_approaches_20261021/plots/README.md).
 
+### Stage 13 — Results and graphs published to GitHub: 21 October 2026
+
+Published the integrated project and 12-page method report as commit
+[`82f1300`](https://github.com/Rahul-Ajay7/Q-Route/commit/82f1300).
+Then published all complete-run evidence, cumulative/per-case exporters,
+35 case PNGs, cumulative PNG/SVG, the 36-page graph PDF and updated guides as
+[`efd2cc0`](https://github.com/Rahul-Ajay7/Q-Route/commit/efd2cc0).
+Both pushes to `Rahul-Ajay7/Q-Route` on `main` completed successfully. The
+working tree was clean after the results push. Publication did not rerun the
+scientific experiments or change their cost values.
+
+### Stage 14 — Development documentation refreshed: 21 October 2026
+
+Added a current-status snapshot to this master record, including case coverage,
+verification counts, cumulative totals, graph/report locations and published
+commit IDs. Updated the README, documentation index, architecture, experiment
+commands and project layout to reflect the new exporters and complete-run
+artifacts. Kept the frozen validation, complete rerun and historical results
+distinct. This is a documentation-only update; no solver, benchmark data or
+generated PDF content changed. Local documentation links were checked.
+
+### Stage 15 — Adaptive-removal pilot tried and archived: 21 October 2026
+
+Created the isolated adaptive-removal implementation, compared it with v2,
+uniform selection and matched no-QUBO controls on three cases and ten seeds,
+and audited all 150 runs. The full suite passed 142 tests with eight new
+experimental checks. The small gain over v2 was accompanied by losses to
+uniform selection and in the matched no-QUBO control; no production promotion
+was justified. The user then requested archiving the experiment.
+
+Saved both experimental modules, the test file and complete pilot results in
+`results/archive/adaptive-removal-pilot-20261021.zip`. Verified all 16 files
+byte-for-byte before removing the loose originals. Updated active links to a
+[historical summary](history/ADAPTIVE_REMOVAL_PILOT.md), retaining the protocol,
+source snapshots, raw runs, diagnostics, audit and figures in the archive.
+Production v2 and the main dispatcher remain unchanged. Active test collection
+returns to 134 tests; the archived eight can be inspected separately.
+
 ## 7. Experiment history and measured results
+
+### Experimental adaptive removal pilot — 21 October 2026
+
+Created an isolated `team_benchmark/experimental_adaptive.py`, leaving production
+v2 unchanged. Compared v2, adaptive removal, uniform operator selection, and
+matched v2/adaptive no-QUBO controls on TC06, TC18 and TC20, ten seeds (30–39),
+one second per method: 150 feasible, independently audited results. Source/input
+hashes verified. All 142 tests passed, including eight new experimental checks.
+
+Adaptive removal lowered paired mean cost by 0.302% versus v2 (two case wins,
+one loss), but was 0.332% worse than uniform selection. Adaptive no-QUBO was
+0.652% worse than v2 no-QUBO. These three familiar cases do not establish
+superiority or a learning/QUBO-specific gain. Kept v2 as the default.
+The experimental code, tests and all pilot evidence have since been archived.
+See the [historical findings and restoration guide](history/ADAPTIVE_REMOVAL_PILOT.md)
+and [complete archive](../results/archive/adaptive-removal-pilot-20261021.zip).
 
 Cost reductions below are paired by case and seed, averaged over seeds within
 each case, then averaged across cases. Positive values mean lower hybrid cost;

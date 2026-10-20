@@ -19,3 +19,6 @@ and a [36-page graph PDF](four_approaches_20261021/plots/ALL_CASES_AND_CUMULATIV
 Read [the findings](../../docs/HYBRID_V2.md) for interpretation. Older runs and
 member outputs are in [the archive](../archive/README.md). One-off smoke outputs,
 console logs and runtime caches have been removed.
+
+The experimental adaptive-removal pilot is [archived](../../docs/history/ADAPTIVE_REMOVAL_PILOT.md),
+including code, tests and all results. It is not an active comparison folder.

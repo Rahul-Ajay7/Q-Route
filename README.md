@@ -5,8 +5,10 @@ combines global simulated annealing, cross-vehicle repair, and adaptive QUBO ref
 
 ## Start here
 
+- [Remaining tasks and review checklist](docs/TODO.md).
 - [Complete project details and upgrade history](docs/PROJECT_MASTER_RECORD.md).
 - [Latest all-case four-approach run and cumulative results](results/comparison/four_approaches_20261021/SUMMARY.md).
+- [All case graphs and cumulative graph PDF](results/comparison/four_approaches_20261021/plots/README.md).
 - [Detailed four-approach PDF](docs/FOUR_APPROACHES.pdf) ([editable source](docs/FOUR_APPROACHES.md)).
 - [Current results and hybrid implementation](docs/HYBRID_V2.md).
 - [Current comparison CSV](results/comparison/hybrid_v2_validation/runs.csv).
@@ -44,7 +46,7 @@ it does not run optimizations or call traffic services.
 | `members/` | Alphonsa, Angel, Rahul, and Parikshit implementations and original inputs |
 | `team_benchmark/` | Shared model, solvers, runner, plots and audits |
 | `tests/` | Shared algorithm and application tests; member tests remain with their code |
-| `results/comparison/` | The two completed v2 evaluations |
+| `results/comparison/` | Frozen v2 evaluations and complete four-method TC/Solomon rerun |
 | `results/archive/` | Verified compressed historical/development/member evidence |
 | `data/comparison/` | Converted Solomon comparison inputs |
 | `dashboard/` | Working recorded-results viewer |
@@ -54,6 +56,12 @@ it does not run optimizations or call traffic services.
 On the supplied validation cases the revised hybrid improved mean cost over the
 three primary baselines. The no-QUBO variant remained competitive; these results
 do not demonstrate a quantum advantage or universal superiority.
+
+The latest complete rerun scanned 29 supplied TC files and six Solomon variants
+with four methods, five seeds and a one-second budget: 600 independently audited
+feasible results, 80 construction failures and one separately invalid input.
+The [development record](docs/PROJECT_MASTER_RECORD.md#latest-development-status)
+tracks the results, graphs, publication commits and remaining research work.
 
 Angel's original source and the original numerical experiment data are preserved.
 Obsolete outputs are compressed rather than presented as current results. See

@@ -22,5 +22,13 @@
     "archive_bytes": 3468057,
     "sha256": "f2739070ad4a578db1e423ba61abc39f2d05147144e7af8e4e4a2223c1e088da",
     "verified": true
+  },
+  {
+    "archive": "results/archive/adaptive-removal-pilot-20261021.zip",
+    "files": 16,
+    "original_bytes": 1749450,
+    "archive_bytes": 371657,
+    "sha256": "7d61bb524196d985af947015ec84cb3b1d805a63016ec984551b86f38799563a",
+    "verified": true
   }
 ]

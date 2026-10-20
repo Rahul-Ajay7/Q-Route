@@ -9,6 +9,8 @@ The implemented pipeline lives in `team_benchmark/`:
 - `run.py`: shared construction, timed comparisons, manifests and source archives.
 - `audit.py`, `exact.py`, `verify_results.py`: independent accounting, tiny exact oracles and saved-run verification.
 - `report.py`, `plot.py`: paired statistics, reports, CSV and figures.
+- `summarize.py`: multi-dataset cumulative totals and per-case CSVs, with separate dataset-level inference.
+- `plot_cases.py`: individual case graphs, cumulative comparisons and the combined graph PDF from saved results.
 - `provenance.py`, `layout.py`: compact source snapshots and historical path resolution.
 
 ```text

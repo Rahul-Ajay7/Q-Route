@@ -16,7 +16,12 @@ Q-Route/
     comparison/
       hybrid_v2_validation/   Main retained validation, data, figures and sources.zip
       hybrid_v2_budget_check/ Four-case longer-budget check
-      four_approaches_20261021/ All TC + Solomon runs, cumulative and per-case summaries
+      four_approaches_20261021/
+        supplied_cases/       Raw TC runs, audit, source snapshot, plots and report
+        solomon_cases/        Raw Solomon runs, audit, source snapshot, plots and report
+        plots/per_case/       Individual graphs grouped by dataset
+        plots/                Cumulative PNG/SVG, graph index and 36-page PDF
+        SUMMARY.md            Latest combined report; CSV/JSON summaries alongside
     archive/               Historical/member/development evidence in verified ZIPs
   data/comparison/solomon/  Converted free-flow and congestion instances
   dashboard/app.py         Read-only recorded-results viewer
@@ -30,6 +35,11 @@ Q-Route/
 
 Start with the [root README](../README.md), [member guide](../members/README.md),
 [current results](HYBRID_V2.md), or [experiment commands](experiments.md).
+
+The [master development record](PROJECT_MASTER_RECORD.md#latest-development-status)
+tracks completed stages and published commits. The 12-page method report is
+`docs/FOUR_APPROACHES.pdf`; the 36-page complete-run graph report is under
+`results/comparison/four_approaches_20261021/plots/`.
 
 ## Evidence and older paths
 
