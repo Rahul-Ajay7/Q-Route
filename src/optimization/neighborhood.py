@@ -70,8 +70,10 @@ class NeighborhoodOperators:
         possible_moves = []
         if multi:
             possible_moves += ["swap_within", "relocate_within", "two_opt_within"]
+        if non_empty and len(routes) >= 2:
+            possible_moves += ["relocate_between"]
         if len(non_empty) >= 2:
-            possible_moves += ["relocate_between", "swap_between"]
+            possible_moves += ["swap_between"]
 
         if not possible_moves:
             return routes  # nothing to mutate (e.g. all routes empty/singleton)
@@ -94,7 +96,8 @@ class NeighborhoodOperators:
             routes[r] = self.two_opt_within_route(routes[r], i, j)
 
         elif move == "relocate_between":
-            r1, r2 = self.rng.sample(non_empty, 2) if len(non_empty) >= 2 else (non_empty[0], non_empty[0])
+            r1 = self.rng.choice(non_empty)
+            r2 = self.rng.choice([idx for idx in range(len(routes)) if idx != r1])
             if len(routes[r1]) == 0:
                 return routes
             i = self.rng.randrange(len(routes[r1]))

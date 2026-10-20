@@ -1,0 +1,358 @@
+{
+  "id": "TC06",
+  "category": "Capacity",
+  "title": "Capacity binding",
+  "description": "Capacity binding",
+  "units": {
+    "distance": "synthetic_coordinate_units",
+    "time": "minutes",
+    "demand": "units"
+  },
+  "vehicles": [
+    {
+      "id": "V1",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    },
+    {
+      "id": "V2",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    },
+    {
+      "id": "V3",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    }
+  ],
+  "depot": {
+    "id": 0,
+    "x": 50,
+    "y": 50,
+    "demand": 0,
+    "ready_time": 0,
+    "due_time": 1000,
+    "service_time": 0
+  },
+  "customers": [
+    {
+      "id": 1,
+      "x": 25,
+      "y": 63,
+      "demand": 6,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 2,
+      "x": 23,
+      "y": 15,
+      "demand": 9,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 3,
+      "x": 39,
+      "y": 75,
+      "demand": 5,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 4,
+      "x": 23,
+      "y": 17,
+      "demand": 11,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 5,
+      "x": 55,
+      "y": 15,
+      "demand": 5,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 6,
+      "x": 50,
+      "y": 40,
+      "demand": 5,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 7,
+      "x": 21,
+      "y": 65,
+      "demand": 9,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 8,
+      "x": 59,
+      "y": 54,
+      "demand": 4,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 9,
+      "x": 40,
+      "y": 68,
+      "demand": 7,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 10,
+      "x": 34,
+      "y": 74,
+      "demand": 8,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 11,
+      "x": 66,
+      "y": 59,
+      "demand": 4,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 12,
+      "x": 28,
+      "y": 80,
+      "demand": 7,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    }
+  ],
+  "base_travel_time_matrix": [
+    [
+      0.0,
+      28.18,
+      44.2,
+      27.31,
+      42.64,
+      35.36,
+      10.0,
+      32.65,
+      9.85,
+      20.59,
+      28.84,
+      18.36,
+      37.2
+    ],
+    [
+      28.18,
+      0.0,
+      48.04,
+      18.44,
+      46.04,
+      56.6,
+      33.97,
+      4.47,
+      35.17,
+      15.81,
+      14.21,
+      41.19,
+      17.26
+    ],
+    [
+      44.2,
+      48.04,
+      0.0,
+      62.1,
+      2.0,
+      32.0,
+      36.8,
+      50.04,
+      53.08,
+      55.66,
+      60.02,
+      61.52,
+      65.19
+    ],
+    [
+      27.31,
+      18.44,
+      62.1,
+      0.0,
+      60.17,
+      62.1,
+      36.69,
+      20.59,
+      29.0,
+      7.07,
+      5.1,
+      31.38,
+      12.08
+    ],
+    [
+      42.64,
+      46.04,
+      2.0,
+      60.17,
+      0.0,
+      32.06,
+      35.47,
+      48.04,
+      51.62,
+      53.76,
+      58.05,
+      60.11,
+      63.2
+    ],
+    [
+      35.36,
+      56.6,
+      32.0,
+      62.1,
+      32.06,
+      0.0,
+      25.5,
+      60.46,
+      39.2,
+      55.08,
+      62.63,
+      45.35,
+      70.38
+    ],
+    [
+      10.0,
+      33.97,
+      36.8,
+      36.69,
+      35.47,
+      25.5,
+      0.0,
+      38.29,
+      16.64,
+      29.73,
+      37.58,
+      24.84,
+      45.65
+    ],
+    [
+      32.65,
+      4.47,
+      50.04,
+      20.59,
+      48.04,
+      60.46,
+      38.29,
+      0.0,
+      39.56,
+      19.24,
+      15.81,
+      45.4,
+      16.55
+    ],
+    [
+      9.85,
+      35.17,
+      53.08,
+      29.0,
+      51.62,
+      39.2,
+      16.64,
+      39.56,
+      0.0,
+      23.6,
+      32.02,
+      8.6,
+      40.46
+    ],
+    [
+      20.59,
+      15.81,
+      55.66,
+      7.07,
+      53.76,
+      55.08,
+      29.73,
+      19.24,
+      23.6,
+      0.0,
+      8.49,
+      27.51,
+      16.97
+    ],
+    [
+      28.84,
+      14.21,
+      60.02,
+      5.1,
+      58.05,
+      62.63,
+      37.58,
+      15.81,
+      32.02,
+      8.49,
+      0.0,
+      35.34,
+      8.49
+    ],
+    [
+      18.36,
+      41.19,
+      61.52,
+      31.38,
+      60.11,
+      45.35,
+      24.84,
+      45.4,
+      8.6,
+      27.51,
+      35.34,
+      0.0,
+      43.42
+    ],
+    [
+      37.2,
+      17.26,
+      65.19,
+      12.08,
+      63.2,
+      70.38,
+      45.65,
+      16.55,
+      40.46,
+      16.97,
+      8.49,
+      43.42,
+      0.0
+    ]
+  ],
+  "traffic_events": [],
+  "simulation": {
+    "start_time": 0,
+    "end_time": 360,
+    "step_minutes": 15,
+    "travel_time_rule": "base_travel_time_matrix[i][j] * active multiplier; null multiplier means closed edge"
+  },
+  "scenario": {
+    "mode": "tight_capacity"
+  },
+  "expected_behavior": "Return capacity/time-window-feasible routes if possible; evaluate costs and record algorithm runtime without assuming improvement."
+}

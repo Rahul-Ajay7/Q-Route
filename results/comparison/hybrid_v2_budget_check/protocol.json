@@ -1,0 +1,61 @@
+{
+  "cases": [
+    "TC06.json",
+    "TC17.json",
+    "TC18.json",
+    "TC20.json"
+  ],
+  "reason": "Size/constraint coverage: 100-customer fleet, tight windows, network congestion, simultaneous disruptions. Chosen before inspecting aggregate validation results.",
+  "settings": {
+    "seconds": 1,
+    "max_actions": 1000000,
+    "window": 5,
+    "samples": 8,
+    "qubo_steps": 40,
+    "plateau": 50,
+    "tabu_cycles": 2,
+    "cycles": 20,
+    "cooling": 0.995,
+    "hybrid_backend": "sa"
+  },
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "methods": [
+    "classical_sa",
+    "tunnelling_sa",
+    "qubo_sb",
+    "hybrid",
+    "hybrid_v1_cached",
+    "hybrid_no_qubo"
+  ],
+  "argv": [
+    "--cases",
+    "TC06.json",
+    "TC17.json",
+    "TC18.json",
+    "TC20.json",
+    "--seeds",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "--seconds",
+    "1",
+    "--methods",
+    "classical_sa",
+    "tunnelling_sa",
+    "qubo_sb",
+    "hybrid",
+    "hybrid_v1_cached",
+    "hybrid_no_qubo",
+    "--output",
+    "results/comparison/hybrid_v2_budget_check"
+  ],
+  "policy": "Same frozen code and search parameters as validation; only optimization budget is longer. No pooled inference across the two budgets."
+}

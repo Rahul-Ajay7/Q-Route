@@ -1,0 +1,10 @@
+# Keep submitted member sources and scientific inputs/evidence byte-for-byte.
+# Their SHA-256 identities must survive Windows Git newline conversion.
+members/** -text
+data/** -text
+results/** -text
+
+*.pdf binary
+*.zip binary
+*.png binary
+*.xlsx binary

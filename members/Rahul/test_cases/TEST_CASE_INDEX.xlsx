@@ -1,0 +1,33 @@
+# Q-ORBIT — Synthetic CVRPTW Test Suite (30 cases)
+
+## Contents
+- `cases/TC01.json` ... `TC30.json`: deterministic synthetic CVRPTW inputs.
+- `prediction/`: four synthetic time series with actual vs forecast congestion.
+- `TEST_CASE_INDEX.csv` and `.xlsx`: team review and assignment matrix.
+
+## Conventions
+- All locations are **synthetic planar coordinates**, NOT GPS or a real road network.
+- Distance and base travel time use the same numeric Euclidean value for convenience; units are artificial, not real km.
+- Customer `id=0` is the depot. `base_travel_time_matrix` indices equal customer IDs (except urgent order, which is appended with its ID).
+- Travel time at departure time `t` = base matrix entry × the most recent applicable directed-edge multiplier. An event with `end_time` expires at that time; then revert to base unless another event applies.
+- `multiplier: null` means a directed edge is CLOSED; do not multiply by null.
+- Traffic is on the **customer-to-customer complete graph**, not a real road network. For genuine road closure, model physical road edges separately.
+- Customer windows are in minutes after simulation start. Arrival before ready time entails waiting. Hard windows require service start <= due time; late service can be penalized only in an explicitly soft-window experiment.
+- Urgent order `release_time` prevents early assignment/service; the node exists in the JSON to keep matrix dimensions stable.
+- In a dynamic event, vehicles may be mid-trip. Freeze completed stops and define whether an in-progress edge is allowed to finish.
+- Predictions are test fixtures, not trained-model outputs. Use actual multipliers for realized cost and forecasts only for proactive planning.
+- Customer count, vehicle count and capacity do not guarantee every generated case is feasible. For some, infeasibility is intentional; for others, feasibility must be established by your solver/reference checker.
+
+## How to use
+1. Load one JSON from `cases/`.
+2. Validate schema and node IDs, then compute initial feasible routes (or report infeasible).
+3. Apply traffic/events at simulation time; compare static, reactive full-fleet, and selective local approaches under the same conditions.
+4. Assert all customers are served exactly once (unless infeasible), capacity limits, time windows, depot return, and event handling.
+5. Record total distance, travel time, late deliveries, route changes, computation time, QUBO calls, and solver seed.
+6. Run each randomized solver at least 10–20 seeds; report distribution, not one favorable run.
+
+## Important limitations
+- No claimed optimal routes or guaranteed improvement are included. Expected behaviors are assertions, not precomputed results.
+- TC09 narrow windows and other random cases may be infeasible; classify via an independent feasibility checker.
+- TC28 closes a single edge in a complete customer graph, so alternative edges remain; it does NOT imply full network disconnection.
+- For standard benchmarking, separately download Solomon VRPTW instances from a trustworthy academic repository. These files are not Solomon benchmark instances.

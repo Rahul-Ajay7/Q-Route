@@ -1,0 +1,19 @@
+[project]
+name = "qorbit"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "pandas", "matplotlib", "requests", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+baselines = ["ortools", "pyvrp"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

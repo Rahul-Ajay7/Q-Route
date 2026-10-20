@@ -1,0 +1,136 @@
+{
+  "id": "TC01",
+  "category": "Basic",
+  "title": "Single vehicle baseline",
+  "description": "Single vehicle baseline",
+  "units": {
+    "distance": "synthetic_coordinate_units",
+    "time": "minutes",
+    "demand": "units"
+  },
+  "vehicles": [
+    {
+      "id": "V1",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    }
+  ],
+  "depot": {
+    "id": 0,
+    "x": 50,
+    "y": 50,
+    "demand": 0,
+    "ready_time": 0,
+    "due_time": 1000,
+    "service_time": 0
+  },
+  "customers": [
+    {
+      "id": 1,
+      "x": 29,
+      "y": 65,
+      "demand": 4,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 2,
+      "x": 13,
+      "y": 70,
+      "demand": 6,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 3,
+      "x": 35,
+      "y": 74,
+      "demand": 8,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 4,
+      "x": 42,
+      "y": 56,
+      "demand": 7,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 5,
+      "x": 70,
+      "y": 39,
+      "demand": 5,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    }
+  ],
+  "base_travel_time_matrix": [
+    [
+      0.0,
+      25.81,
+      42.06,
+      28.3,
+      10.0,
+      22.83
+    ],
+    [
+      25.81,
+      0.0,
+      16.76,
+      10.82,
+      15.81,
+      48.55
+    ],
+    [
+      42.06,
+      16.76,
+      0.0,
+      22.36,
+      32.2,
+      64.88
+    ],
+    [
+      28.3,
+      10.82,
+      22.36,
+      0.0,
+      19.31,
+      49.5
+    ],
+    [
+      10.0,
+      15.81,
+      32.2,
+      19.31,
+      0.0,
+      32.76
+    ],
+    [
+      22.83,
+      48.55,
+      64.88,
+      49.5,
+      32.76,
+      0.0
+    ]
+  ],
+  "traffic_events": [],
+  "simulation": {
+    "start_time": 0,
+    "end_time": 360,
+    "step_minutes": 15,
+    "travel_time_rule": "base_travel_time_matrix[i][j] * active multiplier; null multiplier means closed edge"
+  },
+  "scenario": {
+    "mode": "baseline"
+  },
+  "expected_behavior": "Return capacity/time-window-feasible routes if possible; evaluate costs and record algorithm runtime without assuming improvement."
+}

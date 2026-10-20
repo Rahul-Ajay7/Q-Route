@@ -1,0 +1,290 @@
+{
+  "moves": {
+    "team_benchmark/test_team.py": "tests/benchmark/test_team.py",
+    "team_benchmark/test_hybrid.py": "tests/benchmark/test_hybrid.py",
+    "team_benchmark/test_layout.py": "tests/benchmark/test_layout.py",
+    "docs/TEAM_CODE_REVIEW.md": "docs/history/TEAM_CODE_REVIEW.md",
+    "docs/TEAM_COMPARISON_SUMMARY.md": "docs/history/TEAM_COMPARISON_SUMMARY.md",
+    "results/comparison/hybrid_v2_protocol.json": "results/comparison/hybrid_v2_validation/protocol.json",
+    "results/comparison/hybrid_v2_budget_protocol.json": "results/comparison/hybrid_v2_budget_check/protocol.json"
+  },
+  "removed": [
+    {
+      "path": "experiments",
+      "files": 7,
+      "bytes": 1646,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "config",
+      "files": 2,
+      "bytes": 923,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/benchmarking",
+      "files": 5,
+      "bytes": 1781,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/visualization",
+      "files": 5,
+      "bytes": 1382,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "dashboard/components",
+      "files": 3,
+      "bytes": 570,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "dashboard/pages",
+      "files": 4,
+      "bytes": 638,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "results/comparison/smoke",
+      "files": 31,
+      "bytes": 147137,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "results/comparison/cache",
+      "files": 1,
+      "bytes": 154399,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "results/comparison/archive",
+      "files": 0,
+      "bytes": 0,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "docs/archive",
+      "files": 1,
+      "bytes": 72892,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "data\\raw",
+      "files": 2,
+      "bytes": 4,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "data\\processed",
+      "files": 3,
+      "bytes": 6,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "data\\synthetic",
+      "files": 3,
+      "bytes": 6,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "results\\raw",
+      "files": 1,
+      "bytes": 2,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "results\\processed",
+      "files": 1,
+      "bytes": 2,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "results\\figures",
+      "files": 1,
+      "bytes": 2,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "results\\tables",
+      "files": 1,
+      "bytes": 2,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "docs/presentation",
+      "files": 1,
+      "bytes": 56,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/data/instance_loader.py",
+      "files": 1,
+      "bytes": 582,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/routing/road_routes.py",
+      "files": 1,
+      "bytes": 448,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/traffic/traffic_model.py",
+      "files": 1,
+      "bytes": 498,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/optimization/qubo_model.py",
+      "files": 1,
+      "bytes": 573,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/optimization/quantum_solver.py",
+      "files": 1,
+      "bytes": 464,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/optimization/decoder.py",
+      "files": 1,
+      "bytes": 483,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_constraints.py",
+      "files": 1,
+      "bytes": 107,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_cost.py",
+      "files": 1,
+      "bytes": 104,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_data.py",
+      "files": 1,
+      "bytes": 134,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_greedy.py",
+      "files": 1,
+      "bytes": 108,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "files": 1,
+      "bytes": 114,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_models.py",
+      "files": 1,
+      "bytes": 104,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_qubo.py",
+      "files": 1,
+      "bytes": 121,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "tests/test_traffic.py",
+      "files": 1,
+      "bytes": 108,
+      "reason": "Unused placeholder/scaffold, generated cache, or one-off smoke artifacts"
+    },
+    {
+      "path": "src/constraints/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "src/cost/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "src/data/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "src/optimization/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "src/routing/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "src/traffic/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/cost/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/data/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/models/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/optimization/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/sim/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/traffic/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/validation/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/src/qorbit.egg-info",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "members/Parikshit/tests/__pycache__",
+      "reason": "Generated Python cache/packaging metadata"
+    },
+    {
+      "path": "results/comparison/hybrid_v2_budget_check.log",
+      "reason": "Redundant console log; structured results retained"
+    },
+    {
+      "path": "results/comparison/hybrid_v2_development.log",
+      "reason": "Redundant console log; structured results retained"
+    },
+    {
+      "path": "results/comparison/hybrid_v2_validation.log",
+      "reason": "Redundant console log; structured results retained"
+    },
+    {
+      "path": "results/comparison/hybrid_v2_budget_check/audit_console.log",
+      "reason": "Redundant console log; structured results retained"
+    },
+    {
+      "path": "results/comparison/hybrid_v2_validation/audit_console.log",
+      "reason": "Redundant console log; structured results retained"
+    }
+  ],
+  "archives": "results/archive/INDEX.json"
+}

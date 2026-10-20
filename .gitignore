@@ -1,5 +1,7 @@
 # Python
 __pycache__/
+.pytest_cache/
+.ruff_cache/
 *.py[cod]
 *.egg-info/
 .eggs/
@@ -22,12 +24,9 @@ env/
 .DS_Store
 Thumbs.db
 
-# Data / results
-data/processed/*/
-results/raw/*
-results/processed/*
-results/figures/*
-results/tables/*
+# Scientific outputs and source archives are retained; runtime clutter is ignored.
+results/**/cache/
+results/**/.cache/
 *.log
 
 # Config with secrets

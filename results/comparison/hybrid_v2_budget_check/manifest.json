@@ -1,0 +1,63 @@
+{
+  "settings": {
+    "seconds": 1.0,
+    "max_actions": 1000000,
+    "window": 5,
+    "samples": 8,
+    "qubo_steps": 40,
+    "plateau": 50,
+    "tabu_cycles": 2,
+    "cycles": 20,
+    "cooling": 0.995,
+    "hybrid_backend": "sa"
+  },
+  "methods": [
+    "classical_sa",
+    "tunnelling_sa",
+    "qubo_sb",
+    "hybrid",
+    "hybrid_v1_cached",
+    "hybrid_no_qubo"
+  ],
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "window_policy": "hard",
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "source_sha256": {
+    "team_benchmark\\audit.py": "56751e8c3a3dd4f6509ecf1cb65d23da821d778afed9e8af38d636fbe122d852",
+    "team_benchmark\\cached.py": "b46dd76d2e52b85c638530ec481f6cbe1e6bc45942c44f476b7eeae70b0505c5",
+    "team_benchmark\\exact.py": "d12ff97ba7ae578f399397dc67fcd0220ae130ac8f523c573b235837a2eb2e62",
+    "team_benchmark\\hybrid.py": "a50f1cbac20508a77672c39026ada901e2212d3d7891745abc985ffb3b659d4b",
+    "team_benchmark\\layout.py": "9b3e7b222ba0fe4cb8b52aa38f04f967a66062173dfca5e9d35a07b6d31e1e16",
+    "team_benchmark\\member_cli.py": "69675b7c5a6ee3e3814fc3fa839dafadec83153695947facf50db7781731b331",
+    "team_benchmark\\plot.py": "f31b1c94df3e3bea230024118043df9232fdb0cf4bff038f19c691a932c761aa",
+    "team_benchmark\\prepare_solomon.py": "78b1654f290f807eeb91061876924e8930a29a12f0b8653ad6aa1b439d5d1234",
+    "team_benchmark\\problem.py": "a20cf696101379816a8b0bd659f587a4893349b1badbf541bd38716c4fc2ceab",
+    "team_benchmark\\report.py": "8a2e1057768418bc50ee4fbbca95b4dba0bf7a63b0d387a07ca34bebe7e54e54",
+    "team_benchmark\\run.py": "120c1dddc0294702b7e56e259c65ac8ea1596a029b4a262d3c0f535afc7ff7b2",
+    "team_benchmark\\solvers.py": "534b0fe0bd0259c1a2348bd5f6266c7bba042b1b597a004d249566ec1dd32d79",
+    "team_benchmark\\test_hybrid.py": "fb2cdc7900ff112d1752ceb0af227886f50474d365b0b9a1e0470a36f089df34",
+    "team_benchmark\\test_layout.py": "4ef986e516d9b5a5ec879319594d4f9b0acb5b87d948fa6c36e3542f380e1e4a",
+    "team_benchmark\\test_team.py": "4bf07d672b407a6e9ef5100cd2fce40f4dc0fde60dd4517d78f8d6a586cacbb7",
+    "team_benchmark\\verify_results.py": "91854fa049bf11b9207b6260c18136e92bf42a43f3bbf9556f8acf5a9bf6955e",
+    "team_benchmark\\__init__.py": "0eaddc2d14e01109937db3cde1dd9feafca9e2b0d166e1052b304a1fceb1a273",
+    "members\\Rahul\\run_sb.py": "53a8902938351e589dd4d52d1e44abb13a1f2ca8f65fcd7aa44c6d7f063933d1",
+    "members\\Angel\\saq_cvrptw.py": "7840ac4ca487e1a67230a80a56a8f747b7b7657bfd974223a71346becc30747c"
+  },
+  "input_sha256": {
+    "C:\\Users\\RAHUL\\Desktop\\Files\\React\\Q-Route\\members\\Rahul\\test_cases\\TC06.json": "f9e307f0f92dad71aea0c96195d503ec73f512f33853278c5909c23ea1a3d8d5",
+    "C:\\Users\\RAHUL\\Desktop\\Files\\React\\Q-Route\\members\\Rahul\\test_cases\\TC17.json": "88d22e0476fe9bb901d02706db4d0ae724353a7c6295eac1243c4ae2efe7744c",
+    "C:\\Users\\RAHUL\\Desktop\\Files\\React\\Q-Route\\members\\Rahul\\test_cases\\TC18.json": "a23f6b3e293b8b0a1adae13f0e851ba87e884ce8a43bc76f274131c4f996bf8c",
+    "C:\\Users\\RAHUL\\Desktop\\Files\\React\\Q-Route\\members\\Rahul\\test_cases\\TC20.json": "ec5170324deb4ceb396df3c8d835061027f06c4645442d28bd5abaec1033f666"
+  },
+  "construction": "nearest-neighbour then up to 8 insertion restarts",
+  "traffic": "offline, departure-dependent; wait through closures; latest active event wins",
+  "cost_units": "INR; synthetic coordinate km, input time minutes"
+}

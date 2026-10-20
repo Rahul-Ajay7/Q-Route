@@ -1,0 +1,213 @@
+{
+  "feasible_runs_audited": 770,
+  "failed_runs": 105,
+  "declared_source_hashes_verified": true,
+  "input_hashes_verified": true,
+  "exact_small_cases": [
+    {
+      "case": "TC30.json",
+      "optimal_cost": 836.2005987865272,
+      "proven_optimal": true,
+      "proven_infeasible": false,
+      "run_gap_percent": [
+        {
+          "method": "hybrid",
+          "seed": 10,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_v1_cached",
+          "seed": 10,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_qubo",
+          "seed": 10,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_repair",
+          "seed": 10,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 10,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 10,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 10,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_v1_cached",
+          "seed": 11,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_qubo",
+          "seed": 11,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_repair",
+          "seed": 11,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 11,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 11,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 11,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 11,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_qubo",
+          "seed": 12,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_repair",
+          "seed": 12,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 12,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 12,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 12,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 12,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_v1_cached",
+          "seed": 12,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_repair",
+          "seed": 13,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 13,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 13,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 13,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 13,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_v1_cached",
+          "seed": 13,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_qubo",
+          "seed": 13,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "classical_sa",
+          "seed": 14,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "tunnelling_sa",
+          "seed": 14,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "qubo_sb",
+          "seed": 14,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid",
+          "seed": 14,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_v1_cached",
+          "seed": 14,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_qubo",
+          "seed": 14,
+          "gap_percent": 0.0
+        },
+        {
+          "method": "hybrid_no_repair",
+          "seed": 14,
+          "gap_percent": 0.0
+        }
+      ]
+    }
+  ],
+  "current_source_matches_manifest": false,
+  "source_verification": {
+    "team_benchmark\\audit.py": "current",
+    "team_benchmark\\cached.py": "current",
+    "team_benchmark\\exact.py": "current",
+    "team_benchmark\\hybrid.py": "current",
+    "team_benchmark\\layout.py": "current",
+    "team_benchmark\\member_cli.py": "current",
+    "team_benchmark\\plot.py": "current",
+    "team_benchmark\\prepare_solomon.py": "current",
+    "team_benchmark\\problem.py": "current",
+    "team_benchmark\\report.py": "current",
+    "team_benchmark\\run.py": "snapshot; current source differs",
+    "team_benchmark\\solvers.py": "current",
+    "team_benchmark\\test_hybrid.py": "snapshot; current source differs",
+    "team_benchmark\\test_layout.py": "current",
+    "team_benchmark\\test_team.py": "current",
+    "team_benchmark\\verify_results.py": "snapshot; current source differs",
+    "team_benchmark\\__init__.py": "current",
+    "members\\Rahul\\run_sb.py": "current",
+    "members\\Angel\\saq_cvrptw.py": "current"
+  }
+}

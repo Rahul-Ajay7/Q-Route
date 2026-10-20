@@ -113,6 +113,11 @@ class SolutionEvaluator:
 
     def solution_cost(self, routes: List[List[int]]) -> float:
         vehicles = self.instance["vehicles"]
+        # Coverage is structural: duplicates/unknown IDs cannot be traded for cost.
+        flat = [n for route in routes for n in route]
+        if (len(routes) != len(vehicles) or len(flat) != len(set(flat))
+                or set(flat) - set(self.idx_to_customer)):
+            return math.inf
         total = 0.0
         routed_ids = set()
         for vehicle, node_seq in zip(vehicles, routes):
@@ -188,7 +193,11 @@ def routes_from_greedy(greedy_solution: Dict, num_vehicles: int) -> List[List[in
     (empty list if that vehicle was unused by greedy).
     """
     routes = [[] for _ in range(num_vehicles)]
+    occupied = set()
     for i, route in enumerate(greedy_solution["routes"]):
-        if i < num_vehicles:
-            routes[i] = route["node_indices"][:]
+        slot = route.get("vehicle_index", i)
+        if not 0 <= slot < num_vehicles or slot in occupied:
+            raise ValueError("Invalid or duplicate greedy vehicle slot")
+        occupied.add(slot)
+        routes[slot] = route["node_indices"][:]
     return routes

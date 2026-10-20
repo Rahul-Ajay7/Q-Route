@@ -1,0 +1,26 @@
+[
+  {
+    "archive": "results/archive/v1-comparisons.zip",
+    "files": 57,
+    "original_bytes": 15656301,
+    "archive_bytes": 1133394,
+    "sha256": "1bb213e1dd6348e149fd2a369d67c6f0a7a68e8a94fd2398d6cceab3977d70ee",
+    "verified": true
+  },
+  {
+    "archive": "results/archive/development.zip",
+    "files": 26,
+    "original_bytes": 823060,
+    "archive_bytes": 106827,
+    "sha256": "4e052bc6fb4c0115fa2c0e6be3fca190593b233eb55705b6fec4cb7364d82827",
+    "verified": true
+  },
+  {
+    "archive": "results/archive/member-artifacts.zip",
+    "files": 79,
+    "original_bytes": 7783131,
+    "archive_bytes": 3468057,
+    "sha256": "f2739070ad4a578db1e423ba61abc39f2d05147144e7af8e4e4a2223c1e088da",
+    "verified": true
+  }
+]

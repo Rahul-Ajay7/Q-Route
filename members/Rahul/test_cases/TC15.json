@@ -1,0 +1,352 @@
+{
+  "id": "TC08",
+  "category": "Capacity",
+  "title": "Insufficient total capacity",
+  "description": "Insufficient total capacity",
+  "units": {
+    "distance": "synthetic_coordinate_units",
+    "time": "minutes",
+    "demand": "units"
+  },
+  "vehicles": [
+    {
+      "id": "V1",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    },
+    {
+      "id": "V2",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    }
+  ],
+  "depot": {
+    "id": 0,
+    "x": 50,
+    "y": 50,
+    "demand": 0,
+    "ready_time": 0,
+    "due_time": 1000,
+    "service_time": 0
+  },
+  "customers": [
+    {
+      "id": 1,
+      "x": 27,
+      "y": 22,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 2,
+      "x": 68,
+      "y": 60,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 3,
+      "x": 26,
+      "y": 74,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 4,
+      "x": 69,
+      "y": 53,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 5,
+      "x": 42,
+      "y": 71,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 6,
+      "x": 42,
+      "y": 88,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 7,
+      "x": 36,
+      "y": 17,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 8,
+      "x": 23,
+      "y": 12,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 9,
+      "x": 85,
+      "y": 39,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 10,
+      "x": 34,
+      "y": 71,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 11,
+      "x": 75,
+      "y": 71,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 12,
+      "x": 47,
+      "y": 18,
+      "demand": 30,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    }
+  ],
+  "base_travel_time_matrix": [
+    [
+      0.0,
+      36.24,
+      20.59,
+      33.94,
+      19.24,
+      22.47,
+      38.83,
+      35.85,
+      46.62,
+      36.69,
+      26.4,
+      32.65,
+      32.14
+    ],
+    [
+      36.24,
+      0.0,
+      55.9,
+      52.01,
+      52.2,
+      51.24,
+      67.68,
+      10.3,
+      10.77,
+      60.44,
+      49.5,
+      68.59,
+      20.4
+    ],
+    [
+      20.59,
+      55.9,
+      0.0,
+      44.27,
+      7.07,
+      28.23,
+      38.21,
+      53.6,
+      65.8,
+      27.02,
+      35.74,
+      13.04,
+      46.96
+    ],
+    [
+      33.94,
+      52.01,
+      44.27,
+      0.0,
+      47.85,
+      16.28,
+      21.26,
+      57.87,
+      62.07,
+      68.6,
+      8.54,
+      49.09,
+      59.81
+    ],
+    [
+      19.24,
+      52.2,
+      7.07,
+      47.85,
+      0.0,
+      32.45,
+      44.2,
+      48.84,
+      61.62,
+      21.26,
+      39.36,
+      18.97,
+      41.34
+    ],
+    [
+      22.47,
+      51.24,
+      28.23,
+      16.28,
+      32.45,
+      0.0,
+      17.0,
+      54.33,
+      61.98,
+      53.6,
+      8.0,
+      33.0,
+      53.24
+    ],
+    [
+      38.83,
+      67.68,
+      38.21,
+      21.26,
+      44.2,
+      17.0,
+      0.0,
+      71.25,
+      78.34,
+      65.19,
+      18.79,
+      37.12,
+      70.18
+    ],
+    [
+      35.85,
+      10.3,
+      53.6,
+      57.87,
+      48.84,
+      54.33,
+      71.25,
+      0.0,
+      13.93,
+      53.71,
+      54.04,
+      66.61,
+      11.05
+    ],
+    [
+      46.62,
+      10.77,
+      65.8,
+      62.07,
+      61.62,
+      61.98,
+      78.34,
+      13.93,
+      0.0,
+      67.62,
+      60.02,
+      78.64,
+      24.74
+    ],
+    [
+      36.69,
+      60.44,
+      27.02,
+      68.6,
+      21.26,
+      53.6,
+      65.19,
+      53.71,
+      67.62,
+      0.0,
+      60.21,
+      33.53,
+      43.42
+    ],
+    [
+      26.4,
+      49.5,
+      35.74,
+      8.54,
+      39.36,
+      8.0,
+      18.79,
+      54.04,
+      60.02,
+      60.21,
+      0.0,
+      41.0,
+      54.57
+    ],
+    [
+      32.65,
+      68.59,
+      13.04,
+      49.09,
+      18.97,
+      33.0,
+      37.12,
+      66.61,
+      78.64,
+      33.53,
+      41.0,
+      0.0,
+      59.94
+    ],
+    [
+      32.14,
+      20.4,
+      46.96,
+      59.81,
+      41.34,
+      53.24,
+      70.18,
+      11.05,
+      24.74,
+      43.42,
+      54.57,
+      59.94,
+      0.0
+    ]
+  ],
+  "traffic_events": [],
+  "simulation": {
+    "start_time": 0,
+    "end_time": 360,
+    "step_minutes": 15,
+    "travel_time_rule": "base_travel_time_matrix[i][j] * active multiplier; null multiplier means closed edge"
+  },
+  "scenario": {
+    "mode": "insufficient"
+  },
+  "expected_behavior": "Report infeasible: aggregate customer demand exceeds total fleet capacity."
+}

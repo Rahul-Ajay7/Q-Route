@@ -1,0 +1,29 @@
+{
+  "feasible_runs_audited": 120,
+  "failed_runs": 0,
+  "declared_source_hashes_verified": true,
+  "input_hashes_verified": true,
+  "exact_small_cases": [],
+  "current_source_matches_manifest": false,
+  "source_verification": {
+    "team_benchmark\\audit.py": "current",
+    "team_benchmark\\cached.py": "current",
+    "team_benchmark\\exact.py": "current",
+    "team_benchmark\\hybrid.py": "current",
+    "team_benchmark\\layout.py": "current",
+    "team_benchmark\\member_cli.py": "current",
+    "team_benchmark\\plot.py": "current",
+    "team_benchmark\\prepare_solomon.py": "current",
+    "team_benchmark\\problem.py": "current",
+    "team_benchmark\\report.py": "current",
+    "team_benchmark\\run.py": "snapshot; current source differs",
+    "team_benchmark\\solvers.py": "current",
+    "team_benchmark\\test_hybrid.py": "snapshot; current source differs",
+    "team_benchmark\\test_layout.py": "current",
+    "team_benchmark\\test_team.py": "current",
+    "team_benchmark\\verify_results.py": "snapshot; current source differs",
+    "team_benchmark\\__init__.py": "current",
+    "members\\Rahul\\run_sb.py": "current",
+    "members\\Angel\\saq_cvrptw.py": "current"
+  }
+}

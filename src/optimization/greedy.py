@@ -45,7 +45,7 @@ class GreedySolver:
                 ...
             ],
             "unrouted_customer_ids": [ids that couldn't be placed -- means
-                                       infeasible instance for given fleet],
+                                       construction failed; not an infeasibility proof],
         }
         """
         customers = instance["customers"]
@@ -58,7 +58,7 @@ class GreedySolver:
 
         routes = []
 
-        for vehicle in vehicles:
+        for vehicle_index, vehicle in enumerate(vehicles):
             if not unassigned:
                 break
 
@@ -118,6 +118,7 @@ class GreedySolver:
                 route_end = current_time + return_travel_min
                 routes.append({
                     "vehicle_id": vehicle["id"],
+                    "vehicle_index": vehicle_index,
                     "customer_ids": [idx_to_customer[i]["id"] for i in route_nodes],
                     "node_indices": route_nodes,
                     "arrival_times_min": arrival_times,

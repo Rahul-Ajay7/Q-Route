@@ -1,0 +1,220 @@
+{
+  "id": "TC07",
+  "category": "Capacity",
+  "title": "Oversized customer",
+  "description": "Oversized customer",
+  "units": {
+    "distance": "synthetic_coordinate_units",
+    "time": "minutes",
+    "demand": "units"
+  },
+  "vehicles": [
+    {
+      "id": "V1",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    },
+    {
+      "id": "V2",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    }
+  ],
+  "depot": {
+    "id": 0,
+    "x": 50,
+    "y": 50,
+    "demand": 0,
+    "ready_time": 0,
+    "due_time": 1000,
+    "service_time": 0
+  },
+  "customers": [
+    {
+      "id": 1,
+      "x": 59,
+      "y": 73,
+      "demand": 101,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 2,
+      "x": 49,
+      "y": 50,
+      "demand": 11,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 3,
+      "x": 22,
+      "y": 81,
+      "demand": 4,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 4,
+      "x": 53,
+      "y": 54,
+      "demand": 11,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 5,
+      "x": 39,
+      "y": 33,
+      "demand": 7,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 6,
+      "x": 16,
+      "y": 27,
+      "demand": 12,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 7,
+      "x": 27,
+      "y": 45,
+      "demand": 9,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 8,
+      "x": 49,
+      "y": 63,
+      "demand": 6,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    }
+  ],
+  "base_travel_time_matrix": [
+    [
+      0.0,
+      24.7,
+      1.0,
+      41.77,
+      5.0,
+      20.25,
+      41.05,
+      23.54,
+      13.04
+    ],
+    [
+      24.7,
+      0.0,
+      25.08,
+      37.85,
+      19.92,
+      44.72,
+      62.97,
+      42.52,
+      14.14
+    ],
+    [
+      1.0,
+      25.08,
+      0.0,
+      41.11,
+      5.66,
+      19.72,
+      40.22,
+      22.56,
+      13.0
+    ],
+    [
+      41.77,
+      37.85,
+      41.11,
+      0.0,
+      41.11,
+      50.92,
+      54.33,
+      36.35,
+      32.45
+    ],
+    [
+      5.0,
+      19.92,
+      5.66,
+      41.11,
+      0.0,
+      25.24,
+      45.8,
+      27.51,
+      9.85
+    ],
+    [
+      20.25,
+      44.72,
+      19.72,
+      50.92,
+      25.24,
+      0.0,
+      23.77,
+      16.97,
+      31.62
+    ],
+    [
+      41.05,
+      62.97,
+      40.22,
+      54.33,
+      45.8,
+      23.77,
+      0.0,
+      21.1,
+      48.84
+    ],
+    [
+      23.54,
+      42.52,
+      22.56,
+      36.35,
+      27.51,
+      16.97,
+      21.1,
+      0.0,
+      28.43
+    ],
+    [
+      13.04,
+      14.14,
+      13.0,
+      32.45,
+      9.85,
+      31.62,
+      48.84,
+      28.43,
+      0.0
+    ]
+  ],
+  "traffic_events": [],
+  "simulation": {
+    "start_time": 0,
+    "end_time": 360,
+    "step_minutes": 15,
+    "travel_time_rule": "base_travel_time_matrix[i][j] * active multiplier; null multiplier means closed edge"
+  },
+  "scenario": {
+    "mode": "oversized"
+  },
+  "expected_behavior": "Report infeasible: customer demand exceeds vehicle capacity; do not silently drop customer."
+}

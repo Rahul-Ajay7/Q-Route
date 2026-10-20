@@ -1,0 +1,282 @@
+{
+  "id": "TC02",
+  "category": "Basic",
+  "title": "Two vehicle baseline",
+  "description": "Two vehicle baseline",
+  "units": {
+    "distance": "synthetic_coordinate_units",
+    "time": "minutes",
+    "demand": "units"
+  },
+  "vehicles": [
+    {
+      "id": "V1",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    },
+    {
+      "id": "V2",
+      "capacity": 100,
+      "start_depot": 0,
+      "end_depot": 0
+    }
+  ],
+  "depot": {
+    "id": 0,
+    "x": 50,
+    "y": 50,
+    "demand": 0,
+    "ready_time": 0,
+    "due_time": 1000,
+    "service_time": 0
+  },
+  "customers": [
+    {
+      "id": 1,
+      "x": 50,
+      "y": 84,
+      "demand": 7,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 2,
+      "x": 55,
+      "y": 31,
+      "demand": 11,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 3,
+      "x": 77,
+      "y": 27,
+      "demand": 10,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 4,
+      "x": 77,
+      "y": 49,
+      "demand": 9,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 5,
+      "x": 32,
+      "y": 60,
+      "demand": 5,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 6,
+      "x": 82,
+      "y": 33,
+      "demand": 11,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 7,
+      "x": 48,
+      "y": 67,
+      "demand": 10,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 8,
+      "x": 62,
+      "y": 48,
+      "demand": 10,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 9,
+      "x": 20,
+      "y": 54,
+      "demand": 7,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    },
+    {
+      "id": 10,
+      "x": 17,
+      "y": 30,
+      "demand": 7,
+      "ready_time": 0,
+      "due_time": 1000,
+      "service_time": 5
+    }
+  ],
+  "base_travel_time_matrix": [
+    [
+      0.0,
+      34.0,
+      19.65,
+      35.47,
+      27.02,
+      20.59,
+      36.24,
+      17.12,
+      12.17,
+      30.27,
+      38.59
+    ],
+    [
+      34.0,
+      0.0,
+      53.24,
+      63.07,
+      44.2,
+      30.0,
+      60.21,
+      17.12,
+      37.95,
+      42.43,
+      63.29
+    ],
+    [
+      19.65,
+      53.24,
+      0.0,
+      22.36,
+      28.43,
+      37.01,
+      27.07,
+      36.67,
+      18.38,
+      41.88,
+      38.01
+    ],
+    [
+      35.47,
+      63.07,
+      22.36,
+      0.0,
+      22.0,
+      55.8,
+      7.81,
+      49.41,
+      25.81,
+      63.07,
+      60.07
+    ],
+    [
+      27.02,
+      44.2,
+      28.43,
+      22.0,
+      0.0,
+      46.32,
+      16.76,
+      34.13,
+      15.03,
+      57.22,
+      62.94
+    ],
+    [
+      20.59,
+      30.0,
+      37.01,
+      55.8,
+      46.32,
+      0.0,
+      56.82,
+      17.46,
+      32.31,
+      13.42,
+      33.54
+    ],
+    [
+      36.24,
+      60.21,
+      27.07,
+      7.81,
+      16.76,
+      56.82,
+      0.0,
+      48.08,
+      25.0,
+      65.46,
+      65.07
+    ],
+    [
+      17.12,
+      17.12,
+      36.67,
+      49.41,
+      34.13,
+      17.46,
+      48.08,
+      0.0,
+      23.6,
+      30.87,
+      48.27
+    ],
+    [
+      12.17,
+      37.95,
+      18.38,
+      25.81,
+      15.03,
+      32.31,
+      25.0,
+      23.6,
+      0.0,
+      42.43,
+      48.47
+    ],
+    [
+      30.27,
+      42.43,
+      41.88,
+      63.07,
+      57.22,
+      13.42,
+      65.46,
+      30.87,
+      42.43,
+      0.0,
+      24.19
+    ],
+    [
+      38.59,
+      63.29,
+      38.01,
+      60.07,
+      62.94,
+      33.54,
+      65.07,
+      48.27,
+      48.47,
+      24.19,
+      0.0
+    ]
+  ],
+  "traffic_events": [],
+  "simulation": {
+    "start_time": 0,
+    "end_time": 360,
+    "step_minutes": 15,
+    "travel_time_rule": "base_travel_time_matrix[i][j] * active multiplier; null multiplier means closed edge"
+  },
+  "scenario": {
+    "mode": "baseline"
+  },
+  "expected_behavior": "Return capacity/time-window-feasible routes if possible; evaluate costs and record algorithm runtime without assuming improvement."
+}
